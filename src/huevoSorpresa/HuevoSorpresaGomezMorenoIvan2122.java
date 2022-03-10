@@ -1,9 +1,13 @@
 package huevoSorpresa;
 
+/**
+ *
+ * @author ivangomez
+ */
 public class HuevoSorpresaGomezMorenoIvan2122 {
 
     /**
-     * @return the precioMaximoGomezMorenoIvan2122
+     * @return el precioMaximoGomezMorenoIvan2122
      */
     public double getPrecioMaximoGomezMorenoIvan2122() {
         return precioMaximoGomezMorenoIvan2122;
@@ -22,11 +26,25 @@ public class HuevoSorpresaGomezMorenoIvan2122 {
     private double precioMaximoGomezMorenoIvan2122;//precio máximo que puede tener un huevo sorpresa
 
     /*Constructor por defecto*/
+
+    /**
+     *
+     */
+
     public HuevoSorpresaGomezMorenoIvan2122() {
     }
 
 
     /*Constructor por parámetros*/
+
+    /**
+     *
+     * @param unidades
+     * @param precio
+     * @param sorpresa
+     * @param precio_max
+     */
+
     public HuevoSorpresaGomezMorenoIvan2122(int unidades, double precio, String sorpresa, double precio_max) {
         this.unidades = unidades;
         this.precio = precio;
@@ -36,28 +54,58 @@ public class HuevoSorpresaGomezMorenoIvan2122 {
 
 
     /*Método que devuelve el número de huevos sorpresa que tiene la tienda*/
+
+    /**
+     *
+     * @return
+     */
+
     public int obtenerUnidades() {
         return this.unidades;
     }
 
     /*Método que devuelve el precio que tiene cada huevo sorpresa*/
+
+    /**
+     *
+     * @return
+     */
+
     public double obtenerPrecio() {
         return this.getPrecio();
     }
 
 
     /* Método que devuelve la sorpresa que tiene el huevo*/
+
+    /**
+     *
+     * @return
+     */
+
     public String obtenerSorpresa() {
         return sorpresa;
     }
 
     /* Método que permite modificar la sorpresa del huevo*/
+
+    /**
+     *
+     * @param sorpresa
+     */
+
     public void modificarSorpresa(String sorpresa) {
         this.sorpresa = sorpresa;
     }
 
 
     /*Método que permite modificar el número de huevos sorpresa que tiene la tienda*/
+
+    /**
+     *
+     * @param unidades
+     */
+
     public void modificarUnidades(int unidades) {
         this.unidades = unidades;
     }
@@ -65,6 +113,15 @@ public class HuevoSorpresaGomezMorenoIvan2122 {
 
     /*Método que permite sacar huevos sorpresa si se tiene suficiente dinero y hay 
 suficientes unidades en la tienda*/
+
+    /**
+     *
+     * @param unidades
+     * @param dinero
+     * @param sorpresaGomezMorenoIvan2122
+     * @throws Exception
+     */
+
     public void sacarHuevosSorpresas(int unidades, double dinero, String sorpresaGomezMorenoIvan2122) throws Exception {
         if (dinero <= 0) {
             throw new Exception("Se necesita una cantidad de dinero positiva");
@@ -84,6 +141,13 @@ suficientes unidades en la tienda*/
 
     /*Método que permite aumentar el precio de venta de un huevo sorpresa, suma al precio actual 
     el aumento que se indica siempre que no se sobrepase el precio máximo de venta*/
+
+    /**
+     *
+     * @param aumento
+     * @throws Exception
+     */
+
     public void aumentarPrecio(double aumento) throws Exception {
         if (aumento <= 0) {
             throw new Exception("El aumento debe ser positivo");
